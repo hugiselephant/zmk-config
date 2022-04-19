@@ -7,10 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define DEFAULT 0
-#define NUMLAYER 1
-
-#define NONE 0
 
 / {
 	keymap {
@@ -36,24 +32,6 @@
 				>;
 		};
 		
-		number_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  F1 |  F2 |  F3  |  F4  |  F5  |                                          |  F6  |  F7   |  F8   |  F9  |  F10  |  F11 |
-// |  TAB  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | DEFALT  | NUMBER  |  | DEFALT  | NUMBER  |  N   |  M    |  ,    |  .   |   /   | CTRL |
-//                     | SHIFT| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | SHIFT |
-// ---------------------------------------------------------------------------------------------------------------------------------
-			bindings = <
-	&kp ESC   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                           &kp F6 &kp F7  &kp F8  &kp F9   &kp F10   &kp F11
-	&kp TAB   &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5                                           &kp NUMBER_6 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_10   &kp NUMBER_11
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &tog 0 &tog 1                   &tog 0 &tog 1 &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-	                 &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &kp SPACE        &kp BSPC  &kp SPACE  &kp DEL &kp RET &kp RSHFT
-			>;
 
-			sensor-bindings = < 
-				&inc_dec_kp UP_ARROW DOWN_ARROW 
-				&inc_dec_kp UP_ARROW DOWN_ARROW 
-				>;
-		};
 	};
 };
