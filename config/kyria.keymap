@@ -7,6 +7,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define DEFAULT 0
+#define NUMBER 1
+
+#define NONE 0
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -15,16 +20,38 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | DEFALT  | NUMBER  |  | DEFALT  | NUMBER  |  N   |  M    |  ,    |  .   |   /   | CTRL |
+//                     | SHIFT| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | SHIFT |
 			bindings = <
 	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
 	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &tog DEFAULT &tog NUMBER        &tog DEFAULT &tog NUMBER &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
+	                 &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &kp SPACE        &kp BSPC  &kp SPACE  &kp DEL &kp RET &kp RSHFT
 			>;
 
-			sensor-bindings = < &inc_dec_kp UP_ARROW DOWN_ARROW &inc_dec_kp BSPC LEFT >;
+			sensor-bindings = < 
+				&inc_dec_kp UP_ARROW DOWN_ARROW 
+				&inc_dec_kp UP_ARROW DOWN_ARROW 
+				>;
+		};
+		
+		number_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   \  |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | DEFALT  | NUMBER  |  | DEFALT  | NUMBER  |  N   |  M    |  ,    |  .   |   /   | CTRL |
+//                     | SHIFT| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | SHIFT |
+			bindings = <
+	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &tog DEFAULT &tog NUMBER        &tog DEFAULT &tog NUMBER &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
+	                 &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &kp SPACE        &kp BSPC  &kp SPACE  &kp DEL &kp RET &kp RSHFT
+			>;
+
+			sensor-bindings = < 
+				&inc_dec_kp UP_ARROW DOWN_ARROW 
+				&inc_dec_kp UP_ARROW DOWN_ARROW 
+				>;
 		};
 	};
 };
