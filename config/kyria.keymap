@@ -24,7 +24,7 @@
 	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
-			sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW &inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+			sensor-bindings = < &inc_dec_kp UP_ARROW DOWN_ARROW &inc_dec_kp BSPC LEFT >;
 		};
 	};
 };
