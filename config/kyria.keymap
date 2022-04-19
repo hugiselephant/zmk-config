@@ -64,7 +64,7 @@
 			bindings = <
 	&kp ESC   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                           &kp F6 &kp F7  &kp F8    &kp F9  &kp F10  &kp F11
 	&kp GRAVE   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                         &kp N6 &kp N7  &kp N8    &kp N9  &kp N0   &td1
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &to 0 &to 1                   &to 0 &to 1 &kp MINUS &kp PLUS  &kp KP_MULTIPLY &kp KP_LPAR &kp KP_RPAR &kp KP_DIVIDE
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &to 0 &to 1                   &to 0 &to 1 &kp MINUS &kp PLUS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp KP_DIVIDE
 	                 &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &kp SPACE        &kp BSPC  &kp SPACE  &kp DEL &kp RET &kp RSHFT
 			>;
 
