@@ -7,8 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&left_encoder { resolution = <1>; };
-&right_encoder { resolution = <1>; };
+&left_encoder { resolution = <4>; };
+&right_encoder { resolution = <4>; };
 
 #define DEFAULT 0
 #define NUMLAYER 1
