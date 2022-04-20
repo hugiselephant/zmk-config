@@ -7,12 +7,17 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&left_encoder { resolution = <1>; };
+&right_encoder { resolution = <1>; };
+
 #define DEFAULT 0
 #define NUMLAYER 1
 #define NAVLAYER 2
 
 
 #define NONE 0
+
+
 
 / {
 
