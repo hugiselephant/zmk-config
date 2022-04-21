@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &left_encoder { resolution = <2>; };
-&right_encoder { resolution = <2>; };
+&right_encoder { resolution = <4>; };
 
 #define DEFAULT 0
 #define NUMLAYER 1
