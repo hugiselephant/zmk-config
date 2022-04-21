@@ -131,7 +131,7 @@
 //                     | SHIFT| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | SHIFT |
 // ---------------------------------------------------------------------------------------------------------------------------------
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp F &kp P &kp B                                                &kp J &kp L  &kp U     &kp Y   &kp ;    &td0
+	&kp ESC   &kp Q &kp W &kp F &kp P &kp B                                                &kp J &kp L  &kp U     &kp Y   &kp SEMI    &td0
 	&kp TAB   &kp A &kp R &kp S &kp T &kp G                                                &kp M &kp N  &kp E     &kp I   &kp O &kp SQT
 	&td3 &kp Z &kp X &kp C &kp D &kp V &to 0 &to 1                          &to 2 &to 3 &kp K &kp H  &kp COMMA &td1 &kp FSLH &td3
 	                 &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &kp SPACE        &kp BSPC  &kp SPACE  &kp DEL &kp RET &kp RSHFT
