@@ -65,6 +65,13 @@
             tapping-term-ms = <200>;
             bindings = <&kp GRAVE>, <&kp ESC>;
         };
+	td6: tap_dance_6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SQT_MINUS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SQT>, <&kp MINUS>;
+        };
     };
     
 	keymap {
@@ -73,13 +80,13 @@
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  `,ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   [,],\  |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '      |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   ',-      |
 // | SHFT-CAPS |  Z  |  X  |  C   |  V   |  B   | DEFALT  | NUM_L  |  | FUNC_L    | COLMAK  |  N   |  M    |  ,    |  . ! |   /   | SHFT-CAPS |
 //                     | SHIFT| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | SHIFT |
 // ---------------------------------------------------------------------------------------------------------------------------------
 			bindings = <
 	&td5   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &td0
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &td6
 	&td3 &kp Z &kp X &kp C &kp V &kp B &to 0 &to 1                		&to 2 &to 3 &kp N &kp M  &kp COMMA &td1 &kp FSLH &td3
 	                 &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &kp SPACE        &kp BSPC  &kp SPACE  &kp DEL &kp RET &kp RSHFT
 			>;
@@ -133,13 +140,13 @@
 		colmak_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  `,ESC  |  q  |  W  |  F   |  P   |  B   |                                          |  J   |  L    |  U    |  Y   |   ;   |   [,],\  |
-// |  TAB  |  A  |  R  |  S   |  T   |  G   |                                          |  M   |  N    |  E    |  I   |   O   |   '      |
+// |  TAB  |  A  |  R  |  S   |  T   |  G   |                                          |  M   |  N    |  E    |  I   |   O   |   ',-      |
 // | SHFT-CAPS |  Z  |  X  |  C   |  D   |  V   | DEFALT  | NUM_L  |  | FUNC_L    | COLMAK  |  K   |  H    |  ,    |  . ! |   /   | SHFT-CAPS |
 //                     | SHIFT| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | SHIFT |
 // ---------------------------------------------------------------------------------------------------------------------------------
 			bindings = <
 	&td5   &kp Q &kp W &kp F &kp P &kp B                                                &kp J &kp L  &kp U     &kp Y   &kp SEMI    &td0
-	&kp TAB   &kp A &kp R &kp S &kp T &kp G                                                &kp M &kp N  &kp E     &kp I   &kp O &kp SQT
+	&kp TAB   &kp A &kp R &kp S &kp T &kp G                                                &kp M &kp N  &kp E     &kp I   &kp O &td6
 	&td3 &kp Z &kp X &kp C &kp D &kp V &to 0 &to 1                          &to 2 &to 3 &kp K &kp H  &kp COMMA &td1 &kp FSLH &td3
 	                 &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &kp SPACE        &kp BSPC  &kp SPACE  &kp DEL &kp RET &kp RSHFT
 			>;
