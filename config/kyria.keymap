@@ -123,13 +123,13 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |   `,ESC       |  F1 |  F2 |  F3  |  F4  |  F5  |                                                |  PG_UP  |  HOME |  UP   |  END  |   C_VOL_UP | BSPC  |
 // |  TAB      |  F6 |  F7 |  F8  |  F9  |  F10 |                                                |  PG_DN  |  LEFT |  DOWN | RIGHT |   C_VOL_DN |   PSCRN  |
-// | SHFT-CAPS |  BT0  |  BT1  |  BT2   |  BT3   |  OUT_TOG   | DEFALT  | NUM_L  |  | FUNC_L    | COLMAK  |  C_PAUSE   |  C_PREV    |  C_PLAY    |  C_NEXT   |   C_MUTE |  SHFT-CAPS  |
+// | BT_CLR |  BT0  |  BT1  |  BT2   |  BT3   |  OUT_TOG   | DEFALT  | NUM_L  |  | FUNC_L    | COLMAK  |  C_PAUSE   |  C_PREV    |  C_PLAY    |  C_NEXT   |   C_MUTE |  SHFT-CAPS  |
 //                            | LGUI| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | LGUI |
 // ---------------------------------------------------------------------------------------------------------------------------------
 			bindings = <
 	&td5 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                       &kp PG_UP &kp HOME  &kp UP    &kp END  &kp C_VOL_UP  &kp BSPC
 	&kp TAB   &kp F6 &kp F7 &kp F8 &kp F9 &kp F10                                         &kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOL_DN   &kp PSCRN
-	&td3 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &out OUT_TOG &to 0 &to 1                &to 2 &to 3 &kp C_PAUSE &kp C_PREV  &kp C_PLAY &kp C_NEXT &kp C_MUTE &td3
+	&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &out OUT_TOG &to 0 &to 1                &to 2 &to 3 &kp C_PAUSE &kp C_PREV  &kp C_PLAY &kp C_NEXT &kp C_MUTE &td3
 	                 &kp LGUI &kp LCTRL &kp LALT &kp LGUI &kp SPACE        &kp BSPC  &kp SPACE  &kp DEL &kp RET &kp LGUI
 			>;
 
