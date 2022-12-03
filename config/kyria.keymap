@@ -65,7 +65,7 @@
             label = "TAP_DANCE_GRAVE_ESC";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp GRAVE>, <&kp ESC>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
         };
 	td6: tap_dance_6 {
             compatible = "zmk,behavior-tap-dance";
@@ -88,7 +88,7 @@
 
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  `,ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   [,],\  |
+// |  ESC,`  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   [,],\  |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   ',-      |
 // | SHFT-CAPS |  Z  |  X  |  C   |  V   |  B   | DEFALT  | NUM_L  |  | FUNC_L    | COLMAK  |  N   |  M    |  ,    |  . ! |   /   | SHFT-CAPS |
 //                     | LGUI| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | LGUI |
@@ -108,7 +108,7 @@
 		
 		num_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |   `,ESC   |  !  |  @  |  #   |  $   |  %   |                                                      |  ^   |  &    |  *    |  (   |   )  |  + |
+// |  ESC,`   |  !  |  @  |  #   |  $   |  %   |                                                      |  ^   |  &    |  *    |  (   |   )  |  + |
 // |  TAB  |  1  |  2  |  3   |  4   |  5   |                                                      |  6   |  7    |  8    |  9   |   0  |   -  |
 // | SHFT-CAPS |  {  |  }  |  [   |  ]   |  \   | DEFALT  | NUM_L  |  | FUNC_L    | COLMAK  |  :   |  *    |  ,    |  .   |   /   |   =  |
 //                     | LGUI| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | LGUI |
@@ -128,7 +128,7 @@
 		
 		nav_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |   `,ESC       |  F1 |  F2 |  F3  |  F4  |  F5  |                                                |  PG_UP  |  HOME |  UP   |  END  |   C_VOL_UP | BSPC  |
+// |  ESC,`       |  F1 |  F2 |  F3  |  F4  |  F5  |                                                |  PG_UP  |  HOME |  UP   |  END  |   C_VOL_UP | BSPC  |
 // |  TAB      |  F6 |  F7 |  F8  |  F9  |  F10 |                                                |  PG_DN  |  LEFT |  DOWN | RIGHT |   C_VOL_DN |   PSCRN  |
 // | SHFT-CAPS |  BT0  |  BT1  |  BT2   |  BT3   |  OUT_TOG,BT_CLR   | DEFALT  | NUM_L  |  | FUNC_L    | COLMAK  |  C_PAUSE   |  C_PREV    |  C_PLAY    |  C_NEXT   |   C_MUTE |  SHFT-CAPS  |
 //                            | LGUI| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | LGUI |
@@ -148,7 +148,7 @@
 
 		colmak_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  `,ESC  |  q  |  W  |  F   |  P   |  B   |                                          |  J   |  L    |  U    |  Y   |   ;   |   [,],\  |
+// |  ESC,`  |  q  |  W  |  F   |  P   |  B   |                                          |  J   |  L    |  U    |  Y   |   ;   |   [,],\  |
 // |  TAB  |  A  |  R  |  S   |  T   |  G   |                                          |  M   |  N    |  E    |  I   |   O   |   ',-      |
 // | SHFT-CAPS |  Z  |  X  |  C   |  D   |  V   | DEFALT  | NUM_L  |  | FUNC_L    | COLMAK  |  K   |  H    |  ,    |  . ! |   /   | SHFT-CAPS |
 //                     | LGUI| LCTRL| LALT |  LGUI   |   SPACE |  |  BSPC   |  SPACE  | DEL  | RET   | LGUI |
