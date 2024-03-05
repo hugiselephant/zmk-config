@@ -99,7 +99,7 @@
 
             bindings = <
 &td5     &kp Q             &kp W  &kp E     &kp R      &kp T                                               &kp Y    &kp U    &kp I      &kp O  &kp P                      &td0
-&kp TAB  &mt LEFT_SHIFT A  &kp S  &kp D     &kp F      &kp G                                               &kp H    &kp J    &kp K      &kp L  &mt RIGHT_SHIFT SEMICOLON  &td6
+&kp TAB  &mt LEFT_SHIFT A  &kp S  &kp D     &lt 1 F    &kp G                                               &kp H    &lt 1 J  &kp K      &kp L  &mt RIGHT_SHIFT SEMICOLON  &td6
 &td3     &kp Z             &kp X  &kp C     &kp V      &kp B     &to 0     &to 1      &to 2     &to 3      &kp N    &kp M    &kp COMMA  &td1   &kp FSLH                   &td3
                                   &kp LGUI  &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE  &kp BSPC  &kp SPACE  &kp DEL  &kp RET  &kp LGUI
             >;
@@ -162,7 +162,7 @@
 
             bindings = <
 &td5     &kp Q             &kp W  &kp F     &kp P      &kp B                                               &kp J    &kp L    &kp U      &kp Y  &kp SEMI           &td0
-&kp TAB  &mt LEFT_SHIFT A  &kp R  &kp S     &kp T      &kp G                                               &kp M    &kp N    &kp E      &kp I  &mt RIGHT_SHIFT O  &td6
+&kp TAB  &mt LEFT_SHIFT A  &kp R  &kp S     &lt 1 T    &kp G                                               &kp M    &lt 1 N  &kp E      &kp I  &mt RIGHT_SHIFT O  &td6
 &td3     &kp Z             &kp X  &kp C     &kp D      &kp V     &to 0     &to 1      &to 2     &to 3      &kp K    &kp H    &kp COMMA  &td1   &kp FSLH           &td3
                                   &kp LGUI  &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE  &kp BSPC  &kp SPACE  &kp DEL  &kp RET  &kp LGUI
             >;
