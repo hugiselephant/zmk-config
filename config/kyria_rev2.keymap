@@ -95,7 +95,7 @@
             label = "TAP_DANCE_OUT_TOG_BT_CLR";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp v>, <&out OUT_TOG>, <&bt BT_CLR>;
+            bindings = <&kp V>, <&out OUT_TOG>, <&bt BT_CLR>;
         };
     };
 
