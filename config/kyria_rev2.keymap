@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-&left_encoder { resolution = <2>; };
-&right_encoder { resolution = <2>; };
+&left_encoder { steps = <36>; };
+&right_encoder { steps = <36>; };
 
 / {
 	keymap {
