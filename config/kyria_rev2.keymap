@@ -15,12 +15,6 @@
 
 &sensors { triggers-per-rotation = <18>; };
 
-&lt {
-    flavor = "tap-preferred";
-    retro-tap;
-    tapping-term-ms = <200>;
-};
-
 #define DEFAULT 0
 #define COLMAK 1
 #define NUM_L 2
@@ -115,6 +109,30 @@
             retro-tap;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
         };
+
+        left_num: left_num {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_NUM";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            retro-tap;
+            hold-trigger-key-positions = <11 10 9 8 7 6 18 19 20 21 22 23 39 38 37 36 35 34>;
+        };
+
+        right_num: right_num {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_NUM";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            retro-tap;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
+        };
     };
 
     keymap {
@@ -129,10 +147,10 @@
             // ---------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&td5            &kp Q                     &kp W  &kp E     &kp R      &kp T                                                        &kp Y        &kp U    &kp I      &kp O  &kp P                               &td0
-&kp TAB         &left_shift LEFT_SHIFT A  &kp S  &kp D     &kp F      &lt NUM_L G                                                  &lt NUM_L H  &kp J    &kp K      &kp L  &right_shift RIGHT_SHIFT SEMICOLON  &td6
-&kp LEFT_SHIFT  &kp Z                     &kp X  &kp C     &kp V      &kp B        &to DEFAULT  &to NUM_L  &to FUNC_L  &to COLMAK  &kp N        &kp M    &kp COMMA  &td1   &kp FSLH                            &kp RIGHT_SHIFT
-                                                 &kp LGUI  &kp LCTRL  &kp LALT     &kp LGUI     &kp SPACE  &kp BSPC    &kp SPACE   &kp DEL      &kp RET  &kp LGUI
+&td5            &kp Q                     &kp W  &kp E     &kp R          &kp T                                                     &kp Y    &kp U           &kp I      &kp O  &kp P                               &td0
+&kp TAB         &left_shift LEFT_SHIFT A  &kp S  &kp D     &left_num 2 T  &kp G                                                     &kp H    &right_num 2 J  &kp K      &kp L  &right_shift RIGHT_SHIFT SEMICOLON  &td6
+&kp LEFT_SHIFT  &kp Z                     &kp X  &kp C     &kp V          &kp B     &to DEFAULT  &to NUM_L  &to FUNC_L  &to COLMAK  &kp N    &kp M           &kp COMMA  &td1   &kp FSLH                            &kp RIGHT_SHIFT
+                                                 &kp LGUI  &kp LCTRL      &kp LALT  &kp LGUI     &kp SPACE  &kp BSPC    &kp SPACE   &kp DEL  &kp RET         &kp LGUI
             >;
 
             sensor-bindings = <
@@ -150,10 +168,10 @@
             // ---------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&td5            &kp Q                     &kp W  &kp F     &kp P      &kp B                                                        &kp J        &kp L    &kp U      &kp Y  &kp SEMI                    &td0
-&kp TAB         &left_shift LEFT_SHIFT A  &kp R  &kp S     &kp T      &lt NUM_L G                                                  &lt NUM_L M  &kp N    &kp E      &kp I  &right_shift RIGHT_SHIFT O  &td6
-&kp LEFT_SHIFT  &kp Z                     &kp X  &kp C     &kp D      &kp V        &to DEFAULT  &to NUM_L  &to FUNC_L  &to COLMAK  &kp K        &kp H    &kp COMMA  &td1   &kp FSLH                    &kp RIGHT_SHIFT
-                                                 &kp LGUI  &kp LCTRL  &kp LALT     &kp LGUI     &kp SPACE  &kp BSPC    &kp SPACE   &kp DEL      &kp RET  &kp LGUI
+&td5            &kp Q                     &kp W  &kp F     &kp P          &kp B                                                     &kp J    &kp L           &kp U      &kp Y  &kp SEMI                    &td0
+&kp TAB         &left_shift LEFT_SHIFT A  &kp R  &kp S     &left_num 2 T  &kp G                                                     &kp M    &right_num 2 N  &kp E      &kp I  &right_shift RIGHT_SHIFT O  &td6
+&kp LEFT_SHIFT  &kp Z                     &kp X  &kp C     &kp D          &kp V     &to DEFAULT  &to NUM_L  &to FUNC_L  &to COLMAK  &kp K    &kp H           &kp COMMA  &td1   &kp FSLH                    &kp RIGHT_SHIFT
+                                                 &kp LGUI  &kp LCTRL      &kp LALT  &kp LGUI     &kp SPACE  &kp BSPC    &kp SPACE   &kp DEL  &kp RET         &kp LGUI
             >;
 
             sensor-bindings = <
